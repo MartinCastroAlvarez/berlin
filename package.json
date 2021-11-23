@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/MartinCastroAlvarez/berlin#readme",
   "dependencies": {
-    "expo": "~43.0.2",
+    "@mui/material": "^5.2.0",
+    "expo": "^43.0.3",
     "expo-splash-screen": "~0.13.5",
     "expo-status-bar": "~1.1.0",
     "expo-updates": "~0.10.13",
@@ -35,7 +36,7 @@
     "react-native-web": "0.17.1"
   },
   "devDependencies": {
-    "create-react-native-app": "^3.6.0",
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "create-react-native-app": "^3.6.0"
   }
 }
