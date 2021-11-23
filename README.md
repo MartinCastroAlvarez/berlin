@@ -10,6 +10,7 @@ React Native application
 
 #### Installing dependencies
 ```bash
+sudo npm install -g expo-cli
 sudo npm install -g create-react-native-app
 npm install
 ```
