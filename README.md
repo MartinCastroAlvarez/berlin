@@ -11,6 +11,7 @@ React Native application
 ## References
 
 - [create-react-native-app](https://reactnative.dev/blog/2017/03/13/introducing-create-react-native-app)
+- [react-native-paper](eact-native-paper/)
 
 ## Instructions
 
@@ -19,29 +20,30 @@ React Native application
 sudo npm install -g expo-cli
 sudo npm install -g create-react-native-app
 yarn install
+rm -rf /tmp/metro-*
 ```
 
 #### Running unit tests
 ```bash
-npm run test
+yarn test
 ```
 
 #### Running on Android
 ```bash
-npm run android
+yarn android
 ```
 
 #### Running on iOS
 ```bash
-npm run ios
+yarn ios
 ```
 
 #### Running on web
 ```bash
-npm run web
+yarn web
 ```
 
 #### Running on web
 ```bash
-npm run start
+yarn start
 ```
