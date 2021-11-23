@@ -6,7 +6,13 @@ React Native application
 ## References
 - [create-react-native-app](https://reactnative.dev/blog/2017/03/13/introducing-create-react-native-app)
 
-## Development
+## Instructions
+
+#### Installing dependencies
+```bash
+sudo npm install -g create-react-native-app
+npm install
+```
 
 #### Running unit tests
 ```bash
