@@ -53,3 +53,8 @@ buck-out/
 .expo/
 web-build/
 dist/
+
+# Linux swap files
+*.swp
+*.swo
+*.swn
