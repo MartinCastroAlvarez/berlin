@@ -3,7 +3,13 @@ React Native application
 
 ![wallpaper](./wallpaper.jpg)
 
+## Contributions
+
+- [FedericoGabrielCastro](https://github.com/FedericoGabrielCastro)
+- [MartinCastroAlvarez](https://github.com/MartinCastroAlvarez)
+
 ## References
+
 - [create-react-native-app](https://reactnative.dev/blog/2017/03/13/introducing-create-react-native-app)
 
 ## Instructions
