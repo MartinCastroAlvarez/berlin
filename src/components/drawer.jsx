@@ -6,15 +6,15 @@ import { createDrawerNavigator } from '@react-navigation/drawer'
 import HomePage from '../views/homePage'
 import FiscalPage from '../views/fiscalPage'
 
-const Stack = createDrawerNavigator()
+const Drawer = createDrawerNavigator()
 
 const CustomDrawer = () => {
     return (
         <NavigationContainer>
-            <Stack.Navigator>
-                <Stack.Screen name="home" component={HomePage}/>
-                <Stack.Screen name="fiscal" component={FiscalPage}/>
-            </Stack.Navigator>
+            <Drawer.Navigator screenOptions={{headerShown:true}}>
+                <Drawer.Screen name="home" component={HomePage}/>
+                <Drawer.Screen name="fiscal" component={FiscalPage}/>
+            </Drawer.Navigator>
         </NavigationContainer>
     )
 }
