@@ -4,6 +4,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
 import HomePage from '../views/homePage'
 import FiscalPage from '../views/fiscalPage'
+import CryptosPage from '../views/cryptosPage'
+
 import Icon from 'react-native-vector-icons/FontAwesome'
 
 const Tab = createBottomTabNavigator()
@@ -23,7 +25,7 @@ const TabNavigator = () => {
                 tabBarIcon: () => <Icon name="camera" size={30} color='#000'/>
             }}
         />
-        <Tab.Screen name="Homes" component={HomePage} />
+        <Tab.Screen name="Cryptos" component={CryptosPage} />
         <Tab.Screen name="Homea" component={HomePage} />
         <Tab.Screen name="Fiscal" component={FiscalPage} />
     </Tab.Navigator>
