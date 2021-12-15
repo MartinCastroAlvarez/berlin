@@ -1,13 +1,16 @@
 import React from 'react';
+import { NavigationContainer } from '@react-navigation/native'
 import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
 
-import CustomDrawer from './src/components/drawer';
+import TabNavigator from './src/navigation/tabNavigator';
 
 export default function App() {
   return (
-    <PaperProvider theme={theme}>
-      <CustomDrawer/>
-    </PaperProvider>
+    <NavigationContainer>
+      <PaperProvider theme={theme}>
+        <TabNavigator/>
+      </PaperProvider>
+    </NavigationContainer>
   );
 }
 
