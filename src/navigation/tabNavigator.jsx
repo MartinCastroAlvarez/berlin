@@ -8,6 +8,7 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 
 const Tab = createBottomTabNavigator()
 
+// Nisman seguira vivo ? 
 const TabNavigator = () => {
     return (
         <Tab.Navigator
