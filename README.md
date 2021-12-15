@@ -15,6 +15,13 @@ React Native application
 - [react-native-animatable](https://github.com/oblador/react-native-animatable)
 - [React Native & CoinGecko | Aplicación de Precios de Criptomonedas](https://www.youtube.com/watch?v=k9ptn9zNHng&t=171s)
 
+## Architecture
+
+- [Application views](/src/views)
+- [Constants](/src/constants)
+- [Assets](/src/assets)
+- [Navigation components](/src/navigation)
+
 ## Instructions
 
 #### Installing dependencies
