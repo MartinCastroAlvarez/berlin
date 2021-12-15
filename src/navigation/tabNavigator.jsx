@@ -6,27 +6,33 @@ import { Button } from 'react-native-paper';
 
 import HomePage from '../views/homePage'
 import FiscalPage from '../views/fiscalPage'
+import CryptosPage from '../views/cryptosPage'
 
 const Tab = createBottomTabNavigator()
 
 const TabNavigator = () => {
-    return (
-        <Tab.Navigator
+    return <Tab.Navigator
+        screenOptions={{
+            tabBarStyle:{
+                    ...styles.container
+            },
+        }}
+    >
+        <Tab.Screen 
+            name="Home" 
+            component={HomePage} 
             screenOptions={{
-                tabBarStyle:{
-                        ...styles.container
-                },
+                tabBarIcon: () => <Icon name="camera" size={30} color='#000'/>
             }}
-        >
+        />
             <Tab.Screen 
-                name="Home" 
-                component={HomePage} 
+                name="cryptos" 
+                component={CryptosPage} 
             />
             <Tab.Screen name="Homes" component={HomePage} />
             <Tab.Screen name="Homea" component={HomePage} />
             <Tab.Screen name="Fiscal" component={FiscalPage} />
         </Tab.Navigator>
-    )
 }
 
 const styles = StyleSheet.create({
@@ -39,8 +45,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#fff",
         borderRadius: 15,
         height: 90
-    },
-});
-
+    }
+})
 
 export default TabNavigator
