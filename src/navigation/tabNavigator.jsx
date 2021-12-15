@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
 import HomePage from '../views/homePage'
@@ -8,30 +8,25 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 
 const Tab = createBottomTabNavigator()
 
-// Nisman seguira vivo ? 
 const TabNavigator = () => {
-    return (
-        <Tab.Navigator
+    return <Tab.Navigator
+        screenOptions={{
+            tabBarStyle:{
+                    ...styles.container
+            },
+        }}
+    >
+        <Tab.Screen 
+            name="Home" 
+            component={HomePage} 
             screenOptions={{
-                tabBarStyle:{
-                        ...styles.container
-                },
+                tabBarIcon: () => <Icon name="camera" size={30} color='#000'/>
             }}
-        >
-            <Tab.Screen 
-                name="Home" 
-                component={HomePage} 
-                screenOptions={{
-                    tabBarIcon: () => (
-                        <Icon name="camera" size={30} color='#000'/>
-                    )
-                }}
-            />
-            <Tab.Screen name="Homes" component={HomePage} />
-            <Tab.Screen name="Homea" component={HomePage} />
-            <Tab.Screen name="Fiscal" component={FiscalPage} />
-        </Tab.Navigator>
-    )
+        />
+        <Tab.Screen name="Homes" component={HomePage} />
+        <Tab.Screen name="Homea" component={HomePage} />
+        <Tab.Screen name="Fiscal" component={FiscalPage} />
+    </Tab.Navigator>
 }
 
 const styles = StyleSheet.create({
@@ -44,8 +39,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#fff",
         borderRadius: 15,
         height: 90
-    },
-});
-
+    }
+})
 
 export default TabNavigator
