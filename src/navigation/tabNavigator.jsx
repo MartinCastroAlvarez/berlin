@@ -22,17 +22,33 @@ const TabNavigator = () => {
             name="Home" 
             component={HomePage} 
             screenOptions={{
+                tabBarLabel: '1',
+                tabBarActiveTintColor: '#e91e63',
+                tabBarTintColor: '#000',
                 tabBarIcon: () => <Icon name="camera" size={30} color='#000'/>
             }}
         />
-            <Tab.Screen 
-                name="cryptos" 
-                component={CryptosPage} 
-            />
-            <Tab.Screen name="Homes" component={HomePage} />
-            <Tab.Screen name="Homea" component={HomePage} />
-            <Tab.Screen name="Fiscal" component={FiscalPage} />
-        </Tab.Navigator>
+        <Tab.Screen 
+            name="cryptos" 
+            component={CryptosPage} 
+            screenOptions={{
+                tabBarLabel: '2',
+                tabBarActiveTintColor: '#e91e63',
+                tabBarTintColor: '#000',
+                tabBarIcon: () => <Icon name="camera" size={30} color='#000'/>
+            }}
+        />
+        <Tab.Screen
+            name="Fiscal"
+            component={FiscalPage}
+            screenOptions={{
+                tabBarLabel: '3',
+                tabBarActiveTintColor: '#e91e63',
+                tabBarTintColor: '#000',
+                tabBarIcon: () => <Icon name="camera" size={30} color='#000'/>
+            }}
+        />
+    </Tab.Navigator>
 }
 
 const styles = StyleSheet.create({
