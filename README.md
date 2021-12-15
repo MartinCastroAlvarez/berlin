@@ -11,7 +11,8 @@ React Native application
 ## References
 
 - [create-react-native-app](https://reactnative.dev/blog/2017/03/13/introducing-create-react-native-app)
-- [react-native-paper](eact-native-paper/)
+- [react-native-paper](https://callstack.github.io/react-native-paper/)
+- [react-native-animatable](https://github.com/oblador/react-native-animatable)
 
 ## Instructions
 
