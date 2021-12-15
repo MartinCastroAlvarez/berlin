@@ -1,14 +1,14 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { Button } from 'react-native-paper';
+
 
 import HomePage from '../views/homePage'
 import FiscalPage from '../views/fiscalPage'
-import Icon from 'react-native-vector-icons/FontAwesome'
 
 const Tab = createBottomTabNavigator()
 
-// Nisman seguira vivo ? 
 const TabNavigator = () => {
     return (
         <Tab.Navigator
@@ -21,11 +21,6 @@ const TabNavigator = () => {
             <Tab.Screen 
                 name="Home" 
                 component={HomePage} 
-                screenOptions={{
-                    tabBarIcon: () => (
-                        <Icon name="camera" size={30} color='#000'/>
-                    )
-                }}
             />
             <Tab.Screen name="Homes" component={HomePage} />
             <Tab.Screen name="Homea" component={HomePage} />
