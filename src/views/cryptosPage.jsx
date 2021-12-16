@@ -7,6 +7,7 @@ import { StyleSheet, Text, View } from 'react-native'
 const CryptosPage = () => {
 
     return <View style={styles.mainContainer}>
+        <Text>AAA</Text>
         <List.Section title="Accordions">
             <List.Accordion
                 title="Uncontrolled Accordion"
