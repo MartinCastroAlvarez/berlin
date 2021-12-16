@@ -14,6 +14,7 @@ React Native application
 - [Constants](/src/constants)
 - [Assets](/src/assets)
 - [Navigation components](/src/navigation)
+- [State app](/src/redux)
 
 ## References
 
@@ -23,8 +24,10 @@ React Native application
 - [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
 - [Coingecko](https://www.coingecko.com/es/api/documentation)
 - [bottom-tab-navigator](https://reactnavigation.org/docs/bottom-tab-navigator/)
+- [redux](https://redux.js.org/introduction/getting-started)
+- [redux-saga](https://reactnavigation.org/docs/bottom-tab-navigator/)
+- [redux-logger](https://www.npmjs.com/package/redux-logger)
 - [React Native & CoinGecko | Aplicación de Precios de Criptomonedas](https://www.youtube.com/watch?v=k9ptn9zNHng&t=171s)
-- [Magic Navigation Menu Indicator using Html CSS & Javascript | Curve Outside Effects](https://www.youtube.com/watch?v=ArTVfdHOB-M)
 
 ## Instructions
 
